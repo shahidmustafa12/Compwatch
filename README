@@ -1,0 +1,21 @@
+Django-Compwatch
+=================
+
+This is a simple compwatch application for your Django powered web app.
+
+Features
+===================
+
+1. allow user to create a new company.
+2. allow user to view company details.
+
+Installation
+============
+
+1. add 'compwatch' directory to your Python path.
+2. execute ./manage.py syncdb to created database tables.
+3. execute ./manage.py runserver to run the server.
+4. Log into your admin and enjoy!
+
+
+

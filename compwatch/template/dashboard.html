@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Competitors - Dashboard</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  </head>
+  <body>	
+    <h1>Dashboard</h1>
+    <p>
+      <h5 align="right"><a href="">Dashboard</a> | <a href="">List Companies</a> | <a href="/addnewcompany/">Add New Company</a> | <a href="">See Deals & Campaigns</a></h5>
+    </p>
+    <table align="center" border="2" cellspacing="0" cellpadding="4">
+    	<tr>
+    		<th>Context</th>
+    		<th>Name</th>
+    		<th>URL</th>
+    		<th>Country</th>
+    		<th>Active<br>Since</th>
+    		<th>Location</th>
+    		<th># of<br>Members</th>
+    		<th># of<br>Facebook<br>Members</th>
+    		<th># of Twitter<br>Followers</th>
+    		<th>Alexa<br>Traffic<br>Rank<br>(World)</th>
+    		<th>Alexa<br>Traffic<br>Rank<br>(Country)</th>
+    	</tr>
+	{%for data in data_list%}
+    		<tr>
+    			<td>{{data.context}}</td>
+    			<td align="right">{{data.name}}</td>
+    			<td align="right">{{data.url}}</td>
+    			<td align="right">{{data.country}}</td>
+    			<td align="right">{{data.active_since}}</td>
+    			<td align="right">{{data.location}}</td>
+    			<td align="right">{{data.totalmembers}}</td>
+    			<td align="right">{{data.facebook}}</td>
+    			<td align="right">{{data.twitter}}</td>
+    			<td align="right">{{data.traffic_world}}</td>
+    			<td align="right">{{data.traffic_country}}</td>
+    		</tr>
+	{% endfor %}
+    </table>
+  </body>
+</html> 
